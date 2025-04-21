@@ -1,0 +1,159 @@
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;  
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 23%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.campus p {
+  color: #212EA0;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.campus h2 {
+  font-size: 32px;
+  color: #000F38;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-transform: none;
+}
+
+.testimonials {
+  margin: 80px auto;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-btn, .back-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212EA0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.next-btn:hover, .back-btn:hover {
+  background: #3a4ab6;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.back-btn {
+  left: 20px;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-info img {
+  width: 200px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-info img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (min-width: 1024px) {
+  .slide {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slide {
+    min-width: 33.33%;
+  }
+}
+
+@media (max-width: 750px) {
+  .campus{
+    margin-top: -260px;
+  }
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 48%;
+    margin-bottom: 25px;
+  }
+  .slide {
+    min-width: 100%;
+  }
+  .next-btn, .back-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .user-info img:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 500px) {
+  .campus{
+    margin-top: -260px;
+  }
+  .user-info img {
+    width: 150px;
+  }
+  .next-btn, .back-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .next-btn img, .back-btn img {
+    width: 12px;
+  }
+}
