@@ -17,6 +17,7 @@ const Hero = () => {
         <button className='btn explore-btn' onClick={handleWhatsAppClick}>
           Whats app<img src={dark_arrow} alt="" className="arrow-icon" />
         </button>
+        <h2>Hello world</h2>
       </div>
     </div>
   )
