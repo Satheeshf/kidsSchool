@@ -58,7 +58,7 @@ const Contact = () => {
     }
 
     setResult("Sending....");
-    formData.append("access_key", "a5657c67-0d64-4ec9-8cf7-90ee9304a56e");
+    formData.append("access_key", "64ab96f8-bcdb-46fc-b9a3-8c3d31986e3d");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -160,7 +160,7 @@ const Contact = () => {
         <div className="map">
           <h3>Chennai Campus</h3>
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.308699060425!2d80.16876731534653!3d13.108097115497796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263d4338e3b2d%3A0x5e3b9c9b9c9b9c9b!2sThe%20Bee%20School!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"  
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d31084.76338055995!2d80.1944786347656!3d13.124797065565566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3a52652dc08bc721%3A0x6ed49bff6912da2b!2sBEE%20SCHOOL%2C%20No.%2030%2C%20shastri%20nagar%20extn%2C%202nd%20Cross%20St%2C%20Kolathur%2C%20Chennai%2C%20Tamil%20Nadu%20600099!3m2!1d13.1350897!2d80.218886!5e0!3m2!1sen!2sin!4v1745247424707!5m2!1sen!2sin"  
             width="100%" 
             height="300" 
             style={{border:0}} 

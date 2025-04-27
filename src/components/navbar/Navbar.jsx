@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link to="gallery" smooth={true} offset={-210} duration={500} onClick={() => setMobileMenu(false)}>Gallery</Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-210} duration={500} className="btn" onClick={() => setMobileMenu(false)}>Contact Us</Link>
+          <Link to="Contact" smooth={true} offset={-210} duration={500} className="btn" onClick={() => setMobileMenu(false)}>Contact Us</Link>
         </li>
       </ul>
 
